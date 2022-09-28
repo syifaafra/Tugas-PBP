@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 1,
+        "fields": {
+            "title" : "Ranah 3 Warna",
+            "watched" : true,
+            "relase_date" : "2022-06-30",
+            "rating" : 5,
+            "review" : "Man Shabara Zhafira"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 2,
+        "fields": {
+            "title" : "Keluarga Cemara",
+            "watched" : true,
+            "relase_date" : "2019-01-03",
+            "rating" : 4,
+            "review" : "Cocok ditonton bersama keluarga"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 3,
+        "fields": {
+            "title" : "Nanti Aku Cerita Tentang Hari Ini",
+            "watched" : true,
+            "relase_date" : "2020-01-02",
+            "rating" : 4,
+            "review" : "Menggambarkan perasaan setiap anggota keluarga"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 4,
+        "fields": {
+            "title" : "Hafalan Shalat Delisa",
+            "watched" : true,
+            "relase_date" : "2011-12-22",
+            "rating" : 4,
+            "review" : "Jadi tau keadaan saat Tsunami Aceh"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 5,
+        "fields": {
+            "title" : "Mencuri Raden Shaleh",
+            "watched" : false,
+            "relase_date" : "2022-08-22",
+            "rating" : 3,
+            "review" : "Katanya seru dan anti-mainstream"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 6,
+        "fields": {
+            "title" : "Frozen",
+            "watched" : true,
+            "relase_date" : "2013-11-29",
+            "rating" : 4,
+            "review" : "Only the act of true love will thaw a frozen heart"
+            }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk": 7,
+        "fields": {
+            "title" : "The Lorax",
+            "watched" : true,
+            "relase_date" :"2012-03-02",
+            "rating" : 4,
+            "review" : "actions have consequences and promises should be kept"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 8,
+        "fields": {
+            "title" : "Barbie as the Princess and the Pauper",
+            "watched" : false,
+            "relase_date" : "2012-11-14",
+            "rating" : 4,
+            "review" : "The music is good and the sound effects are great"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 9,
+        "fields": {
+            "title" : "Negeri 1 Menara",
+            "watched" : true,
+            "relase_date" : "2012-03-02",
+            "rating" : 4,
+            "review" : "Man Jadda wa Jadda"
+            }
+    },
+    {
+        "model": "mywatchlist.mywatchlist",
+        "pk": 10,
+        "fields": {
+            "title" : "Laskar Pelangi",
+            "watched" : false,
+            "relase_date" : "2006-09-26",
+            "rating" : 4,
+            "review" : "Banyak pelajaran hidup yang bisa dipetik"
+            }
+    }
+]
