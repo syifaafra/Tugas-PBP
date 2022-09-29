@@ -27,7 +27,7 @@ Halaman utama saya buat di `todolist.html`. Penjelasan code sudah terdapat di do
 5. Membuat halaman form untuk pembuatan task :
 Halaman form saya buat di `create_task.html`. Penjelasan code sudah terdapat di dokumentasi code.
 6. Membuat routing :
-Pada `settings.py` dalam `project_django` saya menambahkan aplikasi `todolist` pada `INSTALLED_APPS`. Kemudian di `urlspatterns` milik `urls.py` dalam `project_django` saya menambahkan `path('todolist/', include('todolist.urls'))`. Terakhir, saya mengisi `urls.py` di folder `todolist` dengan code sebagai berikut.
+Pada `settings.py` dalam `project_django` saya menambahkan aplikasi `todolist` pada `INSTALLED_APPS`. Kemudian di `urlspatterns` milik `urls.py` dalam `project_django` saya menambahkan `path('todolist/', include('todolist.urls'))`. Terakhir, saya mengisi `urls.py` di folder `todolist`.
 7. Deployment ke Heroku :
 Saat tugas 2, saya sudah melakukan Deployment ke Heroku, sehingga untuk Tugas 4, saya hanya perlu mengupdate repositori Github saya yang sudah tersambung ke Heroku.
 8. Membuat dua akun pengguna dan tiga dummy data menggunakan model Task pada akun masing-masing di situs web Heroku.
