@@ -1,6 +1,8 @@
 # Tugas 4
 
 Link heroku : https://tugas-2-pbp-afra.herokuapp.com/todolist
+![image](dummy1.png)
+![image](dummy2.png)
 
 ## Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>? ##
 `csrf_token` adalah nilai unik, rahasia, dan tidak terprediksi yang dihasilkan oleh aplikasi sisi server dan dikirimkan ke klien sedemikian rupa sehingga disertakan dalam permintaan HTTP berikutnya yang dibuat oleh klien. Saat permintaan selanjutnya dibuat, aplikasi sisi server memvalidasi bahwa permintaan tersebut menyertakan token yang diharapkan dan menolak permintaan jika token tidak ada atau tidak valid. `csrf_token`dapat mencegah serangan CSRF dengan membuat penyerang tidak mungkin membuat permintaan HTTP yang sepenuhnya valid yang cocok untuk diumpankan ke pengguna korban. Karena penyerang tidak dapat menentukan atau memprediksi nilai `csrf_token` pengguna, mereka tidak dapat membuat permintaan dengan semua parameter yang diperlukan aplikasi untuk memenuhi permintaan tersebut.
