@@ -34,7 +34,7 @@ def login_user(request):
 
 def logout_user(request):
     logout(request)
-    return redirect('todolist:login_user')
+    return redirect('todolist:login')
 
 @login_required(login_url='/todolist/login/')
 def create_task(request):

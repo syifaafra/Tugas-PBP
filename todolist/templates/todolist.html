@@ -1,18 +1,21 @@
 {% extends 'base.html' %}
 {% block meta %}
+
 <title>To-Do List</title>
+<!-- header page -->
 <h1>{{user.username}}'s todolist</h1>
 {% endblock meta %}
 
 {% block content %}  
+    <!-- import icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <head>
         {% load static %}
     </head>
-
     <h4>Here is your to do list :</h4>
     <table>
         <tr>
+         <!-- header table -->
           <th>Create Date</th>
           <th>Title</th>
           <th>Description</th>
@@ -22,18 +25,21 @@
           <th>Edit</th>
         </tr>
         {% comment %} Add the data below this line {% endcomment %}
+        <!-- mengambil data task -->
         {% for task in task_list %}
             <tr>
                 <td>{{task.date}}</td>
                 <th>{{task.title}}</th>
                 <td>{{task.description}}</td>
                 <td>
+                    <!-- status task -->
                     {% if task.is_finished %}
                     Selesai
                     {% else %}
                     Belum Selesai
                     {% endif %}
                 </td>
+                <!-- tombol untuk mengubah task -->
                 <td><button><a href="{% url 'todolist:change' task.id %}"><i class="material-symbols-outlined" style="font-size:30px;color:green;">sync</i></a></button></td>
                 <td><button><a href="{% url 'todolist:delete' task.id %}"><i class="material-symbols-outlined" style="font-size:30px;color:red;">delete</i></a></button></td>
                 <td><button><a href="{% url 'todolist:edit' task.id %}"><i class="material-symbols-outlined" style="font-size:30px;color:blue;">edit</i></a></button></td>
