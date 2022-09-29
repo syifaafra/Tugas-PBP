@@ -83,11 +83,6 @@ def edit_task(request, pk):
 @login_required(login_url='/todolist/login/')
 def show_todo(request):
     task_list = Task.objects.filter(user=request.user).all()
-    user_todo_list = []
-    current_user = request.user
-    for task in task_list:
-        if task.user == current_user:
-            user_todo_list.append(task)
     context = {
         'task_list': task_list,
     }
