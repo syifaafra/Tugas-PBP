@@ -44,15 +44,13 @@ Inline CSS adalah style yang langsung ditulis dalam tag HTML menggunakan atribut
 * Kelebihan dari Eksternal Style adalah _managable_ dan dapat dipakai ulang baik dalam satu file maupun di luar file. Namun kekurangannya adalah halaman akan menjadi berantakan, ketika file CSS gagal dipanggil oleh file HTML.
 
 ## Jelaskan tag HTML5 yang kamu ketahui. ##
-* Tag <!DOCTYPE html> adalah sebuah deklerasi atau untuk mengidentifikasi jenis dokumen HTML yang digunakan agar browser dapat menentukan bagaimana memperlakukan kode tersebut.
-* Tag <SECTION> merupakan dokumen atau aplikasi bagian generik.
-* Tag <ARTICLE> merupakan sepotong independen isi dokumen, seperti sebuah blog atau artikel koran.
-* Tag <header>...</header>
-* Tag <HEADER> merupakan bagian kepala dari dukumen.
-* Tag <footer>...</footer>
-* Tag <FOOTER> merupakan bagian catatan kaki yang dapat berisi informasi tentang penulis, informasi hak cipta, dll
-* Tag <NAV> merupakan bagian dari dokumen yang dimaksudkan untuk memudahkan dalam proses navigasi.
-* Tag <FIGURE> dapat digunakan untuk menghubungkan keterangan bersama-sama dengan beberapa konten tertanam, seperti gambar atau video.
+* Tag `<!DOCTYPE html>` adalah sebuah deklerasi atau untuk mengidentifikasi jenis dokumen HTML yang digunakan agar browser dapat menentukan bagaimana memperlakukan kode tersebut.
+* Tag `<SECTION>` merupakan dokumen atau aplikasi bagian generik.
+* Tag `<ARTICLE>` merupakan sepotong independen isi dokumen, seperti sebuah blog atau artikel koran.
+* Tag `<HEADER>` merupakan bagian kepala dari dukumen.
+* Tag `<FOOTER>` merupakan bagian catatan kaki yang dapat berisi informasi tentang penulis, informasi hak cipta, dll
+* Tag `<NAV>` merupakan bagian dari dokumen yang dimaksudkan untuk memudahkan dalam proses navigasi.
+* Tag `<FIGURE>` dapat digunakan untuk menghubungkan keterangan bersama-sama dengan beberapa konten tertanam, seperti gambar atau video.
 
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui. ##
 * Element selector = Element selector menggunakan tag HTML sebagai selector untuk mengubah properti yang terdapat dalam tag tersebut.
