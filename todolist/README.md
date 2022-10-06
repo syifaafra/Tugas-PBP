@@ -35,3 +35,41 @@ Saat tugas 2, saya sudah melakukan Deployment ke Heroku, sehingga untuk Tugas 4,
 ## Referensi ##
 https://portswigger.net/web-security/csrf/tokens
 
+# Tugas 5 # 
+## Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style? ##
+Inline CSS adalah style yang langsung ditulis dalam tag HTML menggunakan atribut style dalam satu baris. Internal CSS adalah style yang disematkan di dalam file HTML namun tidak satu baris. Sedangkan eksternal CSS adalah style yang dibuat pada file CSS. 
+
+* Kelebihan dari Inline Style adalah membantu ketika hanya ingin menguji dan melihat perubahan pada satu elemen, memperbaiki kode dengan cepat, proses permintaan HTTP yang lebih kecil dan proses load website akan lebih cepat. Namun kekurangannya adalah kurang _managable_ dan tidak bisa dipakai ulang untuk elemen HTML lain baik dalam satu file maupun di luar file. 
+* Kelebihan dari Internal Style adalah perubahan pada Internal CSS hanya berlaku pada satu halaman saja, tidak perlu melakukan upload beberapa file karena HTML dan CSS berada dalam satu file, Class dan ID bisa digunakan oleh internal stylesheet. namun kekurangannya adalah kurang _managable_ sehingga jika ingin merevisinya lebih sulit dan tidak bisa dipakai ulang untuk elemen HTML di luar file. 
+* Kelebihan dari Eksternal Style adalah _managable_ dan dapat dipakai ulang baik dalam satu file maupun di luar file. Namun kekurangannya adalah halaman akan menjadi berantakan, ketika file CSS gagal dipanggil oleh file HTML.
+
+## Jelaskan tag HTML5 yang kamu ketahui. ##
+* Tag <!DOCTYPE html> adalah sebuah deklerasi atau untuk mengidentifikasi jenis dokumen HTML yang digunakan agar browser dapat menentukan bagaimana memperlakukan kode tersebut.
+* Tag <SECTION> merupakan dokumen atau aplikasi bagian generik.
+* Tag <ARTICLE> merupakan sepotong independen isi dokumen, seperti sebuah blog atau artikel koran.
+* Tag <header>...</header>
+* Tag <HEADER> merupakan bagian kepala dari dukumen.
+* Tag <footer>...</footer>
+* Tag <FOOTER> merupakan bagian catatan kaki yang dapat berisi informasi tentang penulis, informasi hak cipta, dll
+* Tag <NAV> merupakan bagian dari dokumen yang dimaksudkan untuk memudahkan dalam proses navigasi.
+* Tag <FIGURE> dapat digunakan untuk menghubungkan keterangan bersama-sama dengan beberapa konten tertanam, seperti gambar atau video.
+
+## Jelaskan tipe-tipe CSS selector yang kamu ketahui. ##
+* Element selector = Element selector menggunakan tag HTML sebagai selector untuk mengubah properti yang terdapat dalam tag tersebut.
+* ID selector = ID selector menggunakan ID pada tag sebagai selector-nya.
+* Class selector = Class selector menggunakan Class pada tag sebagai selector-nya.
+## Cara Implementasi Kode Tugas 5 ##
+1. Kustomisasi templat untuk halaman login, register, dan create-task semenarik mungkin.
+Saya menggukanan Class card untuk menampung konten dari ketiga halaman tersebut, dengan menambakan : 
+`<div class="mx-auto card align-items-center text-white bg-custom-navbar mb-3 w-50 " >` dan
+`<div class="card-body">` yang sudah menggunakan _alignment center_ supaya berada di tengah. Saya juga menambahkan `{% load static %}` pada setiap file HTML supaya dapat memanfaatkan style CSS yang sudah saya buat pada file style.css dalam folder css di folder style.
+2. Kustomisasi halaman utama todo list menggunakan cards. (Satu card mengandung satu task).
+Sebelum for looping task yang ada, saya membuat `<div class="row row-cols-3 g-4 m-auto">` untuk membuat 3 row yang akan menampung task terebut. Selanjutnya, untuk setiap task, saya membuat Class Card dengan memanfaatkan bootsrap yang sudah dapat diakses dengan menambahkan `<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">` pada `base.html`
+3. Membuat keempat halaman yang dikustomisasi menjadi responsive.
+Dengan menggunakan `align-items-center`, `row-cols-3`, serta membuat form secara manual maka halaman tersebut dapat dikatakan sudah responsive. 
+
+
+## Referensi ##
+https://codepolitan.com/blog/pengenalan-html5-belajar-html
+https://www.niagahoster.co.id/blog/perbedaan-internal-external-dan-inline-css/#Manfaat_Inline_CSS
+

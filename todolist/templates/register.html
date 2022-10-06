@@ -4,24 +4,36 @@
 <title>Registrasi Akun</title>
 {% endblock meta %}
 
-{% block content %}  
-
+{% block content %}
+{% load static %}
+<!-- Navbar -->
+<nav class="navbar bg-custom-navbar">
+    <div class="container">
+      <a class="navbar-brand mb-0 h1" href="#" style="color:white"> 
+        To Do List Web 
+    </a>
+      </div>
+  </nav>
 <div class = "login">
     <!-- header page -->
     <h1>Formulir Registrasi</h1>  
-
-        <form method="POST" >  
             <!-- mengatasi serangan CSRF  -->
             {% csrf_token %}  
-            <table>  
-                <!-- membuat form -->
-                {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
-            </table>  
-        </form>
+            <div class="mx-auto card align-items-center text-white bg-custom-navbar mb-3 w-50 " >
+                <form method="POST" >  
+                    <div class="card-body">
+                        <table>  
+                            <!-- membuat form -->
+                            {{ form.as_table }}  
+                            <tr>  
+                                <td></td>
+                                <td><input type="submit" name="submit" value="Daftar"/></td>  
+                            </tr>  
+                        </table>  
+                    </div>
+                </form>
+            </div>
+       
 
     {% if messages %}  
         <ul>   

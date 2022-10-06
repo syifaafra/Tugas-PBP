@@ -1,0 +1,25 @@
+.bg-custom-navbar {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+
+.bg-button {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    color : white;
+}
+
+.btn {
+    margin-top: 50px;
+    color : white;
+}
+ 
+
+h1{
+    color: #13547a;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 80px;
+}
+
+table th {
+    text-align: center; 
+ }
