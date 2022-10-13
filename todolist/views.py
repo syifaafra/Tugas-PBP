@@ -1,3 +1,4 @@
+import datetime
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
@@ -6,6 +7,10 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from todolist.forms import CreateTask
 from todolist.models import Task
+
+from todolist.models import Task
+from django.http import HttpResponse
+from django.core import serializers
 
 def register(request):
     form = UserCreationForm()
@@ -87,3 +92,19 @@ def show_todo(request):
         'task_list': task_list,
     }
     return render(request, 'todolist.html', context)
+
+
+@login_required(login_url="/todolist/login")
+def show_todolist_json(request):
+    tasks = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', tasks), content_type='application/json')
+
+def add_task(request):
+    if request.method == "POST":
+        judul = request.POST.get('title')
+        deskripsi = request.POST.get('description')
+        new_task = Task(user=request.user, title=judul, description=deskripsi, date=datetime.now())
+        new_task.save()
+    return HttpResponse('')
+
+    
